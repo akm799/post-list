@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="borderSize">1dp</dimen>
+
+    <dimen name="paddingHorizontal">4dp</dimen>
+    <dimen name="paddingVertical">4dp</dimen>
+
+    <dimen name="postListTitleSize">22sp</dimen>
+    <dimen name="postTitleSize">16sp</dimen>
+
+</resources>

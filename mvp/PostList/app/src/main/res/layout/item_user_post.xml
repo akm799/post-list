@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/paddingHorizontal"
+    android:paddingEnd="@dimen/paddingHorizontal"
+    android:paddingTop="@dimen/paddingVertical"
+    android:paddingBottom="@dimen/paddingVertical"
+    android:background="@drawable/border_bottom_black">
+
+    <TextView
+        android:id="@+id/postNumber"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/numberSeparator"
+        style="@style/postTitle"
+        tools:text="42"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/numberSeparator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <TextView
+        android:id="@+id/postTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        app:layout_constraintStart_toEndOf="@id/numberSeparator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/postTitle"
+        tools:text="Ceterum censeo Carthaginem esse delendam"/>
+
+    <TextView
+        android:id="@+id/postUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/postTitle"
+        tools:text="by Marcus Porcius Cato"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
